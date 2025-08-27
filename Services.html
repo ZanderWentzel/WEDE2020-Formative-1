@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Trooper Fitness</title>
+  <style>
+    :root{
+      --gold:#B3925F;
+      --black:#000000;
+      --white:#FFFFFF;
+      --text:#000000;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding: 18px 12px;
+    }
+    .brand{
+      display:flex; align-items:center; justify-content:center; gap:12px;
+      flex-wrap:wrap;
+    }
+    .brand img{height:64px; width:auto}
+    .brand h1{margin:0; font-size:1.6rem;}
+    nav{
+      margin-top:10px;
+    }
+    nav ul{
+      list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; justify-content:center; gap:18px;
+    }
+    nav a{
+      color: var(--gold);
+      text-decoration:none; font-weight:700;
+    }
+    nav a:hover, nav a:focus{color: var(--white); outline:none}
+
+    .hero{
+      background: var(--gold);
+      color: var(--white);
+      text-align:center;
+      padding: 50px 20px;
+    }
+    .hero h2{margin:0 0 8px; font-size:2.2rem}
+    .hero p{margin:0; opacity:.95}
+
+    .container{max-width:1000px; margin:0 auto; padding:2rem 1rem;}
+    .service{
+      background:#F8F8F8;
+      border:2px solid #eee;
+      border-radius:10px;
+      padding:1.75rem;
+      margin-bottom:1.5rem;
+      box-shadow:0 4px 12px rgba(0,0,0,.06);
+    }
+    .service h3{color:var(--gold); margin-top:0}
+
+    footer{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding:18px 12px;
+      margin-top:24px;
+      font-size:.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="Images\TrooperLogo.jpg" alt="Trooper Fitness logo"/>
+      <h1>Trooper Fitness</h1>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+    <li><a href="Homepage.html">Home</a></li>
+      <li><a href="About_Us.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="WeeklySchedule.html">Weekly Schedule</a></li>
+      <li><a href="PricingPlans.html">Pricing Plans</a></li>
+      <li><a href="NutritionGuidance.html">Nutrition Guidance</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Our Services</h2>
+    <p>Explore our range of fitness classes designed for everyone</p>
+  </section>
+
+  <main class="container">
+    <section class="service">
+      <h3>Pilates</h3>
+      <p>
+        Build core strength, improve flexibility, and enhance posture with our Pilates classes. 
+        Ideal for all fitness levels, this low-impact workout helps you connect mind and body.
+      </p>
+    </section>
+
+    <section class="service">
+      <h3>CrossFit</h3>
+      <p>
+        High-intensity, functional training designed to challenge your limits and boost overall fitness. 
+        Workouts change daily to keep you motivated and improving consistently.
+      </p>
+    </section>
+
+    <section class="service">
+      <h3>BOXFit</h3>
+      <p>
+        A fun, energetic class combining boxing techniques with cardio and strength training. 
+        Perfect for stress relief, building endurance, and improving coordination.
+      </p>
+    </section>
+
+    <section class="service">
+      <h3>Personal Training</h3>
+      <p>
+        Get tailored one-on-one sessions with our expert coaches. 
+        Personalized fitness plans designed to meet your goals, whether it’s weight loss, strength, or performance.
+      </p>
+    </section>
+
+    <section class="service">
+      <h3>Group Classes</h3>
+      <p>
+        Experience the motivation of training together. 
+        Group classes are community-driven, encouraging, and adaptable for all skill levels.
+      </p>
+    </section>
+
+    <section class="service">
+      <h3>Nutrition Guidance</h3>
+      <p>
+        Our coaches provide practical nutrition advice to complement your training. 
+        Learn how to fuel your body for performance, recovery, and long-term health.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trooper Fitness | Hartbeespoortdam, South Africa</p>
+  </footer>
+</body>
+</html>

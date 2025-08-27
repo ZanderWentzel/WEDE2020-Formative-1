@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Trooper Fitness</title>
+  <style>
+    :root{
+      --gold:#B3925F;
+      --black:#000000;
+      --white:#FFFFFF;
+      --text:#000000;
+      --muted:#333333;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height:1.55;
+    }
+
+    /* Header + Nav */
+    header{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding: 18px 12px;
+    }
+    .brand{
+      display:flex; align-items:center; justify-content:center; gap:12px;
+      flex-wrap:wrap;
+    }
+    .brand img{height:64px; width:auto}
+    .brand h1{margin:0; font-size:1.6rem; letter-spacing:.03em}
+    nav{
+      margin-top:10px;
+    }
+    nav ul{
+      list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; justify-content:center; gap:18px;
+    }
+    nav a{
+      color: var(--gold);
+      text-decoration:none; font-weight:700;
+    }
+    nav a:hover, nav a:focus{color: var(--white); outline:none}
+
+    /* Hero */
+    .hero{
+      background: var(--gold);
+      color: var(--white);
+      text-align:center;
+      padding: 56px 20px;
+    }
+    .hero h2{margin:0 0 8px; font-size:2.2rem}
+    .hero p{margin:0; opacity:.95}
+
+    /* Content */
+    .container{max-width:1100px; margin:0 auto; padding: 2rem 1rem;}
+    section.card{
+      background:#F8F8F8;
+      border: 2px solid #eee;
+      border-radius:10px;
+      padding: 1.75rem;
+      margin-bottom:1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,.06);
+    }
+    section.card h3{color: var(--gold); margin-top:0}
+
+    /* CTA */
+    .cta{ text-align:center; margin:30px 0; }
+    .btn{
+      display:inline-block;
+      background: var(--black);
+      color: var(--white);
+      padding:12px 22px; border-radius:6px;
+      text-decoration:none; font-weight:700;
+      transition:opacity .2s ease-in-out;
+    }
+    .btn:hover,.btn:focus{opacity:.85}
+
+    /* Footer */
+    footer{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding:18px 12px;
+      margin-top: 24px;
+      font-size:.95rem;
+    }
+
+    @media (min-width: 700px){
+      .grid{display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <!-- Replace src with your logo file name if different -->
+      <img src="Images\TrooperLogo.jpg" alt="Trooper Fitness logo"/>
+      <h1>Trooper Fitness</h1>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+    <li><a href="Homepage.html">Home</a></li>
+      <li><a href="About_Us.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="WeeklySchedule.html">Weekly Schedule</a></li>
+      <li><a href="PricingPlans.html">Pricing Plans</a></li>
+      <li><a href="NutritionGuidance.html">Nutrition Guidance</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Trooper Fitness</h2>
+    <p>Strength • Community • Lifestyle</p>
+  </section>
+
+  <main class="container">
+    <section class="card">
+      <h3>Welcome</h3>
+      <p>
+        At <strong>Trooper Fitness</strong>, we offer functional, fun, and community-driven fitness programs.
+        From Pilates to CrossFit and BOXFit, our classes suit all fitness levels.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Our Services</h3>
+      <div class="grid">
+        <ul>
+          <li>Pilates, CrossFit &amp; BOXFit classes</li>
+          <li>Nutrition guidance and meal planning</li>
+          <li>Community-focused events</li>
+        </ul>
+        <div>
+          <p><em>Train with purpose. Move with confidence. Belong to a community.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <p class="cta">
+      <a class="btn" href="contact.html">Book Your First Class Today</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trooper Fitness | Hartbeespoortdam, South Africa</p>
+  </footer>
+</body>
+</html>

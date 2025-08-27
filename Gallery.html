@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Trooper Fitness</title>
+  <style>
+    :root{
+      --gold:#B3925F;
+      --black:#000000;
+      --white:#FFFFFF;
+      --text:#000000;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding: 18px 12px;
+    }
+    .brand{
+      display:flex; align-items:center; justify-content:center; gap:12px;
+      flex-wrap:wrap;
+    }
+    .brand img{height:64px; width:auto}
+    .brand h1{margin:0; font-size:1.6rem;}
+    nav{
+      margin-top:10px;
+    }
+    nav ul{
+      list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; justify-content:center; gap:18px;
+    }
+    nav a{
+      color: var(--gold);
+      text-decoration:none; font-weight:700;
+    }
+    nav a:hover, nav a:focus{color: var(--white); outline:none}
+
+    .hero{
+      background: var(--gold);
+      color: var(--white);
+      text-align:center;
+      padding: 50px 20px;
+    }
+    .hero h2{margin:0 0 8px; font-size:2.2rem}
+    .hero p{margin:0; opacity:.95}
+
+    .container{max-width:1000px; margin:0 auto; padding:2rem 1rem;}
+
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:16px;
+      margin-top:2rem;
+    }
+    .gallery img{
+      width:100%;
+      height:auto;
+      border-radius:10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor:pointer;
+    }
+    .gallery img:hover{
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    footer{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding:18px 12px;
+      margin-top:24px;
+      font-size:.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="Images\TrooperLogo.jpg" alt="Trooper Fitness logo"/>
+      <h1>Trooper Fitness</h1>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="About_Us.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="WeeklySchedule.html">Weekly Schedule</a></li>
+        <li><a href="PricingPlans.html">Pricing Plans</a></li>
+        <li><a href="NutritionGuidance.html">Nutrition Guidance</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Gallery</h2>
+    <p>Check out our gym, classes, and community in action</p>
+  </section>
+
+  <main class="container">
+    <div class="gallery">
+      <img src="Images\dumbbell.jpg" alt="Gym equipment and weights">
+      <img src="Images\kettlebell.jpg" alt="CrossFit class in action">
+      <img src="Images\group.jpg" alt="Group fitness session">
+      <img src="Images\rope.jpg" alt="Personal training session">
+      <img src="Images\spotter.jpg" alt="Pilates class">
+      <img src="Images\Pilates.jpg" alt="Healthy meal preparation">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trooper Fitness | Hartbeespoortdam, South Africa</p>
+  </footer>
+</body>
+</html>

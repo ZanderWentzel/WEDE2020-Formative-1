@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Plans | Trooper Fitness</title>
+  <style>
+    :root{
+      --gold:#B3925F;
+      --black:#000000;
+      --white:#FFFFFF;
+      --text:#000000;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding: 18px 12px;
+    }
+    .brand{
+      display:flex; align-items:center; justify-content:center; gap:12px;
+      flex-wrap:wrap;
+    }
+    .brand img{height:64px; width:auto}
+    .brand h1{margin:0; font-size:1.6rem;}
+    nav{
+      margin-top:10px;
+    }
+    nav ul{
+      list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; justify-content:center; gap:18px;
+    }
+    nav a{
+      color: var(--gold);
+      text-decoration:none; font-weight:700;
+    }
+    nav a:hover, nav a:focus{color: var(--white); outline:none}
+
+    .hero{
+      background: var(--gold);
+      color: var(--white);
+      text-align:center;
+      padding: 50px 20px;
+    }
+    .hero h2{margin:0 0 8px; font-size:2.2rem}
+    .hero p{margin:0; opacity:.95}
+
+    .container{max-width:1000px; margin:0 auto; padding:2rem 1rem;}
+    .plans{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap:1.5rem;
+      margin-top:2rem;
+    }
+    .plan{
+      border:1px solid #ddd;
+      border-radius:10px;
+      background:#f8f8f8;
+      padding:20px;
+      text-align:center;
+      transition: transform .2s ease;
+    }
+    .plan:hover{transform:translateY(-5px)}
+    .plan h3{
+      margin-top:0;
+      color: var(--gold);
+    }
+    .plan p.price{
+      font-size:1.5rem;
+      font-weight:bold;
+      color: var(--black);
+      margin:10px 0;
+    }
+    ul{padding:0; list-style:none; margin:1rem 0}
+    li{margin-bottom:6px;}
+
+    footer{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding:18px 12px;
+      margin-top:24px;
+      font-size:.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="Images\TrooperLogo.jpg" alt="Trooper Fitness logo"/>
+      <h1>Trooper Fitness</h1>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+    <li><a href="Homepage.html">Home</a></li>
+      <li><a href="About_Us.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="WeeklySchedule.html">Weekly Schedule</a></li>
+      <li><a href="PricingPlans.html">Pricing Plans</a></li>
+      <li><a href="NutritionGuidance.html">Nutrition Guidance</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Pricing Plans</h2>
+    <p>Flexible options to fit your fitness journey</p>
+  </section>
+
+  <main class="container">
+    <div class="plans">
+      <div class="plan">
+        <h3>Basic Plan</h3>
+        <p class="price">R400 / month</p>
+        <ul>
+          <li>Access to gym facilities</li>
+          <li>2 group classes per week</li>
+          <li>Free fitness assessment</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Standard Plan</h3>
+        <p class="price">R650 / month</p>
+        <ul>
+          <li>Access to gym facilities</li>
+          <li>Unlimited group classes</li>
+          <li>Nutrition guidance (monthly)</li>
+          <li>Progress tracking</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Premium Plan</h3>
+        <p class="price">R950 / month</p>
+        <ul>
+          <li>All Standard benefits</li>
+          <li>Weekly 1-on-1 personal training</li>
+          <li>Personalized meal plan</li>
+          <li>Exclusive workshops & events</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trooper Fitness | Hartbeespoortdam, South Africa</p>
+  </footer>
+</body>
+</html>

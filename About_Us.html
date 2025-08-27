@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Trooper Fitness</title>
+  <style>
+    :root{
+      --gold:#B3925F;
+      --black:#000000;
+      --white:#FFFFFF;
+      --text:#000000;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding: 18px 12px;
+    }
+    .brand{
+      display:flex; align-items:center; justify-content:center; gap:12px;
+      flex-wrap:wrap;
+    }
+    .brand img{height:64px; width:auto}
+    .brand h1{margin:0; font-size:1.6rem;}
+    nav{
+      margin-top:10px;
+    }
+    nav ul{
+      list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; justify-content:center; gap:18px;
+    }
+    nav a{
+      color: var(--gold);
+      text-decoration:none; font-weight:700;
+    }
+    nav a:hover, nav a:focus{color: var(--white); outline:none}
+
+    .hero{
+      background: var(--gold);
+      color: var(--white);
+      text-align:center;
+      padding: 50px 20px;
+    }
+    .hero h2{margin:0 0 8px; font-size:2.2rem}
+    .hero p{margin:0; opacity:.95}
+
+    .container{max-width:1000px; margin:0 auto; padding:2rem 1rem;}
+    section.card{
+      background:#F8F8F8;
+      border:2px solid #eee;
+      border-radius:10px;
+      padding:1.75rem;
+      margin-bottom:1.5rem;
+      box-shadow:0 4px 12px rgba(0,0,0,.06);
+    }
+    section.card h3{color:var(--gold); margin-top:0}
+
+    footer{
+      background: var(--black);
+      color: var(--white);
+      text-align:center;
+      padding:18px 12px;
+      margin-top:24px;
+      font-size:.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="Images\TrooperLogo.jpg" alt="Trooper Fitness logo"/>
+      <h1>Trooper Fitness</h1>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+    <li><a href="Homepage.html">Home</a></li>
+      <li><a href="About_Us.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="WeeklySchedule.html">Weekly Schedule</a></li>
+      <li><a href="PricingPlans.html">Pricing Plans</a></li>
+      <li><a href="NutritionGuidance.html">Nutrition Guidance</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>About Us</h2>
+    <p>Get to know the heart of Trooper Fitness</p>
+  </section>
+
+  <main class="container">
+    <section class="card">
+      <h3>Our Story</h3>
+      <p>
+        Trooper Fitness was founded with a single goal: to create a space where fitness meets lifestyle. 
+        Based in Hartbeespoortdam, South Africa, our community thrives on functional training, supportive coaching, 
+        and a culture that makes fitness enjoyable and sustainable.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Our Mission</h3>
+      <p>
+        We strive to inspire individuals to reach their fullest potential through inclusive fitness programs, 
+        nutritional support, and a motivating community. Fitness is more than exercise – it’s about confidence, 
+        balance, and long-term health.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>Expert coaches dedicated to your progress</li>
+        <li>A supportive, family-like community</li>
+        <li>Diverse classes for all levels</li>
+        <li>Holistic approach: fitness + nutrition</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trooper Fitness | Hartbeespoortdam, South Africa</p>
+  </footer>
+</body>
+</html>
